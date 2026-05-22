@@ -1,0 +1,150 @@
+.footer {
+  background: linear-gradient(180deg, #0a0a0a, #000);
+  color: #fff;
+  padding: 80px 40px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footerGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.2fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.footerColumn h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn ul li {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  line-height: 1.6;
+}
+
+.footerColumn ul li:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.contactList li {
+  cursor: default !important;
+}
+
+.contactList li:hover {
+  transform: none !important;
+}
+
+.footerDesc {
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.subscribeBox {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.subscribeBox input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.subscribeBox input::placeholder {
+  color: #555;
+}
+
+.subscribeBox button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+.subscribeBox button:hover {
+  background: #ddd;
+}
+
+.footerBottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.legalLinks span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.legalLinks span:hover {
+  color: #fff;
+}
+
+.separator {
+  cursor: default !important;
+  opacity: 0.3;
+}
+
+.region {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
